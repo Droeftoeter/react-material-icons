@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/alert",
+  "private": true,
+  "main": "../dist/alert/index.js",
+  "module": "../dist/alert/index.js",
+  "jsnext:main": "../dist/alert/index.js"
+}

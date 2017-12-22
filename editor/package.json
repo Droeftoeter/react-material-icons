@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/editor",
+  "private": true,
+  "main": "../dist/editor/index.js",
+  "module": "../dist/editor/index.js",
+  "jsnext:main": "../dist/editor/index.js"
+}

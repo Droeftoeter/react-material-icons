@@ -33,6 +33,7 @@ const paths = {
     src:              path.resolve(__dirname, 'src'),
     iconTemplate:     path.resolve(__dirname, 'icon.mustache'),
     categoryTemplate: path.resolve(__dirname, 'category.mustache'),
+    packageTemplate:  path.resolve(__dirname, 'package.mustache'),
     icons:            path.resolve(__dirname, 'material-design-icons'),
 };
 
@@ -45,6 +46,7 @@ const expr = {
 // Mustache templates
 const iconTemplate = fs.readFileSync(paths.iconTemplate, 'utf8');
 const categoryTemplate = fs.readFileSync(paths.categoryTemplate, 'utf8');
+const packageTemplate = fs.readFileSync(paths.packageTemplate, 'utf8');
 
 const categories = {};
 
@@ -97,7 +99,7 @@ glob('**/production/ic_*_48px.svg', {
     console.log('Generating icon components...');
     files.forEach(createIconComponent);
 
-    console.log('Generating category indexes...');
+    console.log('Generating category indexes and subpackages...');
     Object.keys(categories).forEach(category => {
         const fileName = `${ category.toLowerCase() }/index.js`;
         console.log(`Generating ${ fileName }...`);
@@ -106,6 +108,16 @@ glob('**/production/ic_*_48px.svg', {
             path.resolve(paths.src, fileName),
             Mustache.render(categoryTemplate, {
                 icons: categories[ category ],
+            }),
+        );
+
+        const packageName = `${ category.toLowerCase() }/package.json`;
+        console.log(`Generating ${ packageName }...`);
+
+        fs.outputFileSync(
+            path.resolve(__dirname, packageName),
+            Mustache.render(packageTemplate, {
+                category: category.toLowerCase(),
             }),
         );
     });

@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/notification",
+  "private": true,
+  "main": "../dist/notification/index.js",
+  "module": "../dist/notification/index.js",
+  "jsnext:main": "../dist/notification/index.js"
+}

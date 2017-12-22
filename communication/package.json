@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/communication",
+  "private": true,
+  "main": "../dist/communication/index.js",
+  "module": "../dist/communication/index.js",
+  "jsnext:main": "../dist/communication/index.js"
+}

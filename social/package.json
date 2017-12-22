@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/social",
+  "private": true,
+  "main": "../dist/social/index.js",
+  "module": "../dist/social/index.js",
+  "jsnext:main": "../dist/social/index.js"
+}

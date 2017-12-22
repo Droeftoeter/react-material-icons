@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/device",
+  "private": true,
+  "main": "../dist/device/index.js",
+  "module": "../dist/device/index.js",
+  "jsnext:main": "../dist/device/index.js"
+}

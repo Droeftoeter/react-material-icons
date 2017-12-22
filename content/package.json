@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/content",
+  "private": true,
+  "main": "../dist/content/index.js",
+  "module": "../dist/content/index.js",
+  "jsnext:main": "../dist/content/index.js"
+}

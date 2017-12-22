@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/hardware",
+  "private": true,
+  "main": "../dist/hardware/index.js",
+  "module": "../dist/hardware/index.js",
+  "jsnext:main": "../dist/hardware/index.js"
+}

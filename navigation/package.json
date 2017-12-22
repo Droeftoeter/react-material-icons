@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/navigation",
+  "private": true,
+  "main": "../dist/navigation/index.js",
+  "module": "../dist/navigation/index.js",
+  "jsnext:main": "../dist/navigation/index.js"
+}

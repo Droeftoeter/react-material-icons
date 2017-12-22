@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/toggle",
+  "private": true,
+  "main": "../dist/toggle/index.js",
+  "module": "../dist/toggle/index.js",
+  "jsnext:main": "../dist/toggle/index.js"
+}

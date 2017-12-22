@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/maps",
+  "private": true,
+  "main": "../dist/maps/index.js",
+  "module": "../dist/maps/index.js",
+  "jsnext:main": "../dist/maps/index.js"
+}

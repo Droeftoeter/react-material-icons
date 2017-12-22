@@ -1,0 +1,7 @@
+{
+  "name": "@kobalt/react-material-icons/places",
+  "private": true,
+  "main": "../dist/places/index.js",
+  "module": "../dist/places/index.js",
+  "jsnext:main": "../dist/places/index.js"
+}
